@@ -1,0 +1,255 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="/css/styles.css">
+  <link rel="shortcut icon" href="image/icon2.svg" type="image/x-icon">
+  <script type="text/javascript" src="/js/script.js"></script>
+  <title>Task Outsourcer</title>
+</head>
+
+<body>
+	<header>
+		<a href="/index-simple-user.html" class="app-logo">
+			<img src="image/icon2.svg" alt="" class="logo-img">
+			Task Outsourcer
+		</a>
+		<ul class="nav-menu">
+			<li class="nav-link-container">
+				<a href="/choosing-task.html" class="nav-link">Выбор задачи</a>
+			</li>
+			<li class="nav-link-container">
+				<a href="/personal-cabinet.html" class="nav-link">Личный кабинет</a>
+			</li>
+		</ul>
+	</header>
+
+	<main>
+		<article>
+			<h1>Задача "Рендер картинки в Blender. Движок Cycles"</h1>
+			<div>
+				Это задача нужна для рендера картинки в блендер-проекте. В параметрах укажите размеры картинки, имя	блендер-проекта с расширением и название итоговой картинки.
+			</div>
+			<form action="/task-launched.html" enctype="multipart/form-data">
+				<input type="hidden" id="taskSampleId" name="taskSampleId" value="1">
+				<input type="hidden" id="taskSampleName" name="taskSampleName" value="Рендер картинки в Blender. Движок Cycles">
+				<input type="hidden" id="taskSampleDescription" name="taskSampleDescription"
+					value="Это задача нужна для рендера картинки в блендер-проекте. В параметрах укажите размеры картинки, имя блендер-проекта с расширением и название итоговой картинки.">
+		
+				<div>
+					<span>Горизонтальное разрешение: </span>
+					<input type="hidden" id="values0.taskSampleParamId" name="values[0].taskSampleParamId" value="57">
+					<input type="hidden" id="values0.uuid" name="values[0].uuid" value="ad19ca89-f0ca-4c7c-a3e4-4719a7eef565">
+					<input type="hidden" id="values0.name" name="values[0].name" value="Горизонтальное разрешение">
+					<input type="hidden" id="values0.description" name="values[0].description" value="Тест">
+					<input type="hidden" id="values0.type" name="values[0].type" value="INTEGER">
+		
+		
+					<input type="text" id="values0.value" name="values[0].value" value="">
+		
+					<span style="color: red">Данное поле обязательно для заполнения</span>
+		
+					<details>
+						<summary>О параметре</summary>
+						<p>Описание</p>
+			
+						<div>
+								<input type="hidden" id="intAdditionalInfo0.uuid" name="intAdditionalInfo[0].uuid"
+									value="ad19ca89-f0ca-4c7c-a3e4-4719a7eef565">
+								<input type="hidden" id="intAdditionalInfo0.description" name="intAdditionalInfo[0].description" value="">
+								<input type="hidden" id="intAdditionalInfo0.minConstraint" name="intAdditionalInfo[0].minConstraint"
+									value="0">
+								<input type="hidden" id="intAdditionalInfo0.maxConstraint" name="intAdditionalInfo[0].maxConstraint"
+									value="10000">
+			
+								<p>Допустимые значения: (0;10000)</p>
+						</div>
+					</details>
+		
+		
+				</div>
+		
+				<div>
+					<span>Вертикальное разрешение: </span>
+					<input type="hidden" id="values1.taskSampleParamId" name="values[1].taskSampleParamId" value="58">
+					<input type="hidden" id="values1.uuid" name="values[1].uuid" value="3298d00e-b628-484b-9e86-d29a5e206f58">
+					<input type="hidden" id="values1.name" name="values[1].name" value="Вертикальное разрешение">
+					<input type="hidden" id="values1.description" name="values[1].description" value="">
+					<input type="hidden" id="values1.type" name="values[1].type" value="INTEGER">
+		
+		
+					<input type="text" id="values1.value" name="values[1].value" value="">
+		
+					<span style="color: red">Данное поле обязательно для заполнения</span>
+		
+					<br>
+					<span></span>
+					<br>
+		
+					<div>
+		
+					</div>
+		
+					<div>
+						<div>
+							<input type="hidden" id="intAdditionalInfo1.uuid" name="intAdditionalInfo[1].uuid"
+								value="3298d00e-b628-484b-9e86-d29a5e206f58">
+							<input type="hidden" id="intAdditionalInfo1.description" name="intAdditionalInfo[1].description" value="">
+							<input type="hidden" id="intAdditionalInfo1.minConstraint" name="intAdditionalInfo[1].minConstraint"
+								value="0">
+							<input type="hidden" id="intAdditionalInfo1.maxConstraint" name="intAdditionalInfo[1].maxConstraint"
+								value="10000">
+		
+							<span>ЗАГЛУШКА: (0;10000)</span>
+						</div>
+					</div>
+		
+					<div>
+		
+					</div>
+		
+		
+				</div>
+		
+				<div>
+					<span>blender-проект: </span>
+					<input type="hidden" id="values2.taskSampleParamId" name="values[2].taskSampleParamId" value="59">
+					<input type="hidden" id="values2.uuid" name="values[2].uuid" value="c5fa454c-4796-4732-b842-c3f0b58c3735">
+					<input type="hidden" id="values2.name" name="values[2].name" value="blender-проект">
+					<input type="hidden" id="values2.description" name="values[2].description" value="">
+					<input type="hidden" id="values2.type" name="values[2].type" value="FILE">
+		
+					<input type="file" id="values2.value" name="values[2].value">
+		
+		
+					<span style="color: red">Необходимо приложить файл</span>
+		
+					<br>
+					<span></span>
+					<br>
+		
+					<div>
+						<div>
+							<input type="hidden" id="fileAdditionalInfo0.uuid" name="fileAdditionalInfo[0].uuid"
+								value="c5fa454c-4796-4732-b842-c3f0b58c3735">
+							<input type="hidden" id="fileAdditionalInfo0.description" name="fileAdditionalInfo[0].description" value="">
+						</div>
+					</div>
+				</div>
+		
+				<div>
+					<span>Название итоговой картинки: </span>
+					<input type="hidden" id="values3.taskSampleParamId" name="values[3].taskSampleParamId" value="60">
+					<input type="hidden" id="values3.uuid" name="values[3].uuid" value="05f147b5-23da-484e-a18b-028d9f472e35">
+					<input type="hidden" id="values3.name" name="values[3].name" value="Название итоговой картинки">
+					<input type="hidden" id="values3.description" name="values[3].description" value="">
+					<input type="hidden" id="values3.type" name="values[3].type" value="STRING">
+		
+		
+					<input type="text" id="values3.value" name="values[3].value" value="">
+		
+					<span style="color: red">Данное поле обязательно для заполнения</span>
+		
+					<br>
+					<span></span>
+					<br>
+		
+		
+		
+		
+		
+		
+					<div>
+						<div>
+							<input type="hidden" id="strAdditionalInfo0.uuid" name="strAdditionalInfo[0].uuid"
+								value="05f147b5-23da-484e-a18b-028d9f472e35">
+							<input type="hidden" id="strAdditionalInfo0.description" name="strAdditionalInfo[0].description" value="">
+							<input type="hidden" id="strAdditionalInfo0.hintValue" name="strAdditionalInfo[0].hintValue" value="test00">
+		
+							<span>ЗАГЛУШКА: test00</span>
+						</div>
+					</div>
+		
+				</div>
+		
+				<div>
+					<span>Samples: </span>
+					<input type="hidden" id="values4.taskSampleParamId" name="values[4].taskSampleParamId" value="61">
+					<input type="hidden" id="values4.uuid" name="values[4].uuid" value="04ce6119-15ab-4227-8934-386a72cb4bfa">
+					<input type="hidden" id="values4.name" name="values[4].name" value="Samples">
+					<input type="hidden" id="values4.description" name="values[4].description" value="">
+					<input type="hidden" id="values4.type" name="values[4].type" value="INTEGER">
+		
+		
+					<input type="text" id="values4.value" name="values[4].value" value="">
+		
+					<span style="color: red">Данное поле обязательно для заполнения</span>
+		
+					<br>
+					<span></span>
+					<br>
+		
+					<div>
+		
+					</div>
+		
+					<div>
+		
+					</div>
+		
+					<div>
+						<div>
+							<input type="hidden" id="intAdditionalInfo2.uuid" name="intAdditionalInfo[2].uuid"
+								value="04ce6119-15ab-4227-8934-386a72cb4bfa">
+							<input type="hidden" id="intAdditionalInfo2.description" name="intAdditionalInfo[2].description" value="">
+							<input type="hidden" id="intAdditionalInfo2.minConstraint" name="intAdditionalInfo[2].minConstraint"
+								value="100">
+							<input type="hidden" id="intAdditionalInfo2.maxConstraint" name="intAdditionalInfo[2].maxConstraint"
+								value="1000">
+		
+							<span>ЗАГЛУШКА: (100;1000)</span>
+						</div>
+					</div>
+		
+		
+				</div>
+		
+				<br>
+				<input type="submit" value="Начать">
+			</form>
+		</article>
+	</main>
+
+	<footer>
+		<div class="footer_info">
+			<div class="info_name">
+				Email:
+			</div>
+			<div class="email_info">
+				artemiyViazovski@gmail.com
+			</div>
+		</div>
+		<div class="footer_info">
+			<div class="info_name">
+				Тел:
+			</div>
+			<div class="phone_info">
+				+375296017119
+			</div>
+		</div>
+		<div class="footer_info">
+			<a href="https://t.me/richihnok" target="_blank" class="tg-info">
+				Телеграм
+			</a>
+		</div>
+		<div class="footer_info">
+			<a href="https://github.com/RichiHnok" target="_blank" class="github-info">
+				Github
+			</a>
+		</div>
+	</footer>
+
+</body>
+
+</html>

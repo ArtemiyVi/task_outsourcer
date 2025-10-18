@@ -1,0 +1,61 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="/css/styles.css">
+  <link rel="shortcut icon" href="image/icon2.svg" type="image/x-icon">
+  <script type="text/javascript" src="/js/script.js"></script>
+  <title>Task Outsourcer</title>
+</head>
+
+<body>
+
+	<div>
+		<h2>Регистрация</h2>
+		<form action="/index-simple-user.html">
+			<table>
+				<tbody>
+					<tr>
+						<td><label for="login">Логин:</label></td>
+						<td><input type="text" id="login" name="login" value=""></td>
+					</tr>
+					<tr>
+						<td><label for="First name">Имя:</label></td>
+						<td><input type="text" id="name" name="name" value=""></td>
+					</tr>
+					<tr>
+						<td><label for="Surname">Фамилия:</label></td>
+						<td><input type="text" id="surname" name="surname" value=""></td>
+					</tr>
+					<tr>
+						<td><label for="password">Пароль:</label></td>
+						<td><input type="password" id="password" name="password" value=""></td>
+					</tr>
+					<tr>
+						<td><label for="email">Почта:</label></td>
+						<td><input type="email" id="email" name="email" value=""></td>
+					</tr>
+					<tr>
+						<td><label for="role">Выбор роли:</label></td>
+						<td>
+							<select id="role" name="userRole" onchange="disablePlaceholder(this)">
+								<option value="">Выберите вашу роль</option>
+								<option value="ROLE_ADMIN">ROLE_ADMIN</option>
+								<option value="ROLE_USER">ROLE_USER</option>
+							</select>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div>
+				<button type="submit">Зарегистрироваться</button>
+			</div>
+
+		</form>
+		<a href="/index-admin.html" class="">Зайти как админ</a>
+	</div>
+
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+.title{
+    color: red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 1000;
+}
+
+.text{
+    font-size: 16px;
+    line-height: 32px;
+    font-style: italic;
+
+    background-color: bisque;
+    padding: 50px 50px 50px 50px;
+    margin: 50px 50px 50px 50px;
+    width: 500px;
+    height: 500px;
+    overflow: auto;
+}
+
+.text-2{
+    text-align: center;
+    text-decoration: solid line-through;
+}
+
+.text-3{
+    font-size: 32px;
+    text-shadow: 2px 1px 4px gray;
+}
+
+.text-4{
+    text-transform: uppercase;
+    text-indent: 50px;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+
+.text-5{
+    white-space: nowrap;
+}
+
+.line{
+    height: 2px;
+    width: 100%;
+    background-color: black;
+}

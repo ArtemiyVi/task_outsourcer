@@ -1,0 +1,226 @@
+:root{
+    --bright-y1: #fcf646;
+    --darker-y1: #e7b836;
+    --bright-y2: #eee341;
+    --darker-y2: #dcc33b;
+    --white: #ffffff;
+    --almost-w-y: #FFF4EB;
+    --b-for-shadow: #b17b17;
+    --saturated-r: #d83434;
+    --brown: #a52a2a;
+}
+
+html{
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    background: linear-gradient(var(--bright-y1), var(--darker-y1));
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 800;
+    font-family: sans-serif;
+    position: fixed;
+    /* border: 2px solid #2E9AFF; */
+    justify-content: space-between;
+    width: 100%;
+    min-width: max-content;
+    min-height: max-content;
+    align-items: center;
+}
+
+.app-logo{
+    display: flex;
+    align-items: center;
+    color: var(--brown);
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.logo-img{
+    width: 35px;
+    margin-right: 15px;
+    box-shadow: 0 0 8px 1px var(--b-for-shadow);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--almost-w-y);
+    min-height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    padding-top: 60px;
+    width: 80%;
+    flex-grow: 1;
+    /* min-width: 600px; */
+    display: flex;
+    font-size: 24px;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+}
+
+main.personal-cabinet{
+    font-size: 20px;
+    width: 95%;
+    flex-direction: row;
+}
+
+footer.personal-cabinet{
+    width: 95%;
+}
+
+article{
+    /* min-width: 200px; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: baseline;
+    align-items: center;
+    background-color: var(--white);
+}
+
+article.personal-cabinet{
+    width: 100%;
+    padding: 25px;
+}
+
+aside.personal-cabinet{
+    padding: 10px;
+    align-self: flex-start;
+    width: 20%;
+    margin-left: 15px;
+    background-color: var(--white);
+}
+
+.task-container > a:hover{
+    color: var(--saturated-r);
+}
+
+footer{
+    background: linear-gradient(var(--bright-y2), var(--darker-y2));
+    display: flex;
+    flex-direction: row;
+    min-width: 600px;
+    width: 80%;
+    height: 80px;
+    align-self: center;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.nav-menu{
+    /* border: 2px solid #2E9AFF; */
+    display: flex;
+}
+
+.nav-link {
+    display: inline-block;
+    background: linear-gradient(var(--bright-y1), var(--darker-y1));
+    padding: 5px 15px 5px 15px;
+    margin: 0 5px;
+    box-shadow: 1px 1px 6px 1px var(--b-for-shadow);
+    
+    color: #a52a2a;
+    text-decoration: none;
+
+    /* border: 2px solid #2E9AFF; */
+}
+
+.nav-link:hover,.app-logo:hover{
+    color: #d83434;
+}
+
+.nav-link:active{
+    box-shadow: 1px 1px 6px 1px var(--b-for-shadow) inset;
+}
+
+.task-list{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+h1{
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 20px;
+}
+
+.task-container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.task-description-accordion{
+    margin-top: 6px;
+    font-size: 0.8em;
+}
+
+.task-details-summary::marker{
+    font-size: 1em;
+}
+
+.task-details-summary:hover{
+    text-decoration: underline;
+}
+
+.task-table{
+    font-size: 0.8em;
+    width: 100%;
+    border: 2px solid black;
+}
+
+.task-table > thead > tr > th{
+    border: 1px solid black;
+    align-content: center;
+    padding: 6px;
+}
+
+.task-table > tbody > tr > td{
+    border: 1px solid #9b9b9b;
+    align-content: center;
+}
+
+.task-table > tbody > tr > td{
+    padding: 6px;
+}
+
+.task-table > tbody > tr{
+    height: 150px;
+}
+
+.time-cell{
+    white-space: nowrap;
+}
+
+.id-cell, .time-cell, .result-cell{
+    text-align: center;
+}
+
+.param-name{
+    padding: 4px;
+}
+
+.pagination{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    color: darkblue;
+    text-decoration: underline;
+}
+
+.pagination > a{
+    padding: 0 6px;
+}
+
+.pagination > a:hover{
+    color: blue;
+}

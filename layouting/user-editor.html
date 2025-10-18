@@ -1,0 +1,204 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="/css/styles.css">
+	<link rel="shortcut icon" href="image/icon2.svg" type="image/x-icon">
+	<script type="text/javascript" src="/js/script.js"></script>
+	<title>Task Outsourcer</title>
+</head>
+
+<body>
+	<header>
+		<a href="/index-simple-user.html" class="app-logo">
+			<img src="image/icon2.svg" alt="" class="logo-img">
+			Task Outsourcer
+		</a>
+		<ul class="nav-menu">
+			<li class="nav-link-container">
+				<a href="/choosing-task.html" class="nav-link">Выбор задачи</a>
+			</li>
+			<li class="nav-link-container">
+				<a href="/personal-cabinet.html" class="nav-link">Личный кабинет</a>
+			</li>
+			<li class="nav-link-container">
+				<a href="/control-panel.html" class="nav-link">Контрольная панель</a>
+			</li>
+			<li class="nav-link-container">
+				<a href="/editor.html" class="nav-link">Редактор</a>
+			</li>
+		</ul>
+	</header>
+
+	<main>
+		<article>
+			<span>Текущая учётная запись пользователя</span>
+			<span>Richi</span>
+			<span>Hnok</span>
+			<br>
+			<h2>Редактор пользователей</h2>
+			<table border="1">
+				<tbody>
+					<tr>
+						<th>ID</th>
+						<th>Имя</th>
+						<th>Фамилия</th>
+						<th>Приоритет</th>
+						<th>Время обработки задачи</th>
+						<th>Обновление</th>
+						<th>Удаление</th>
+					</tr>
+					<tr>
+		
+						<td>1</td>
+						<td>R</td>
+						<td>Richi</td>
+						<td>Hnok</td>
+						<td>5</td>
+						<td>120</td>
+						<td>
+							<a href="/editor/updateInfo/user?userId=1">
+								<button type="button">Обновить</button>
+							</a>
+						</td>
+						<td>
+							<a href="/editor/deleteInfo/user?userId=1">
+								<button type="button">Удалить</button>
+							</a>
+						</td>
+					</tr>
+					<tr>
+		
+						<td>3</td>
+						<td>A</td>
+						<td>Artemiy</td>
+						<td>Viazovski</td>
+						<td>7</td>
+						<td>60</td>
+						<td>
+							<a href="/editor/updateInfo/user?userId=3">
+								<button type="button">Обновить</button>
+							</a>
+						</td>
+						<td>
+							<a href="/editor/deleteInfo/user?userId=3">
+								<button type="button">Удалить</button>
+							</a>
+						</td>
+					</tr>
+					<tr>
+		
+						<td>4</td>
+						<td>ap</td>
+						<td>Arkadiy</td>
+						<td>Porovozov</td>
+						<td>5</td>
+						<td>60</td>
+						<td>
+							<a href="/editor/updateInfo/user?userId=4">
+								<button type="button">Обновить</button>
+							</a>
+						</td>
+						<td>
+							<a href="/editor/deleteInfo/user?userId=4">
+								<button type="button">Удалить</button>
+							</a>
+						</td>
+					</tr>
+					<tr>
+		
+						<td>9</td>
+						<td>B</td>
+						<td>B</td>
+						<td>B</td>
+						<td>5</td>
+						<td>60</td>
+						<td>
+							<a href="/editor/updateInfo/user?userId=9">
+								<button type="button">Обновить</button>
+							</a>
+						</td>
+						<td>
+							<a href="/editor/deleteInfo/user?userId=9">
+								<button type="button">Удалить</button>
+							</a>
+						</td>
+					</tr>
+					<tr>
+		
+						<td>10</td>
+						<td>C</td>
+						<td>B</td>
+						<td>B</td>
+						<td>5</td>
+						<td>60</td>
+						<td>
+							<a href="/editor/updateInfo/user?userId=10">
+								<button type="button">Обновить</button>
+							</a>
+						</td>
+						<td>
+							<a href="/editor/deleteInfo/user?userId=10">
+								<button type="button">Удалить</button>
+							</a>
+						</td>
+					</tr>
+					<tr>
+		
+						<td>11</td>
+						<td>D</td>
+						<td>D</td>
+						<td>D</td>
+						<td>6</td>
+						<td>60</td>
+						<td>
+							<a href="/editor/updateInfo/user?userId=11">
+								<button type="button">Обновить</button>
+							</a>
+						</td>
+						<td>
+							<a href="/editor/deleteInfo/user?userId=11">
+								<button type="button">Удалить</button>
+							</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<br>
+			<input type="button" value="Добавить пользователя" onclick="window.location.href = 'addUser'">
+		</article>
+	</main>
+
+	<footer>
+		<div class="footer_info">
+			<div class="info_name">
+				Email:
+			</div>
+			<div class="email_info">
+				artemiyViazovski@gmail.com
+			</div>
+		</div>
+		<div class="footer_info">
+			<div class="info_name">
+				Тел:
+			</div>
+			<div class="phone_info">
+				+375296017119
+			</div>
+		</div>
+		<div class="footer_info">
+			<a href="https://t.me/richihnok" target="_blank" class="tg-info">
+				Телеграм
+			</a>
+		</div>
+		<div class="footer_info">
+			<a href="https://github.com/RichiHnok" target="_blank" class="github-info">
+				Github
+			</a>
+		</div>
+	</footer>
+
+</body>
+
+</html>
