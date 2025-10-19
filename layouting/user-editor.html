@@ -3,7 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="/css/styles.css">
+	<link rel="stylesheet" href="/css/common.css">
+	<link rel="stylesheet" href="/css/curtain-pages/user-editor.css">
 	<link rel="shortcut icon" href="image/icon2.svg" type="image/x-icon">
 	<script type="text/javascript" src="/js/script.js"></script>
 	<title>Task Outsourcer</title>
@@ -33,76 +34,69 @@
 
 	<main>
 		<article>
-			<span>Текущая учётная запись пользователя</span>
-			<span>Richi</span>
-			<span>Hnok</span>
 			<br>
-			<h2>Редактор пользователей</h2>
-			<table border="1">
-				<tbody>
+			<h1>Редактор пользователей</h1>
+			<table class="user-table">
+				<thead class="table-head">
 					<tr>
 						<th>ID</th>
+						<th>Логин</th>
 						<th>Имя</th>
 						<th>Фамилия</th>
 						<th>Приоритет</th>
 						<th>Время обработки задачи</th>
-						<th>Обновление</th>
-						<th>Удаление</th>
+						<th>Управление</th>
 					</tr>
+				</thead>
+				<tbody class="table-body">
 					<tr>
 		
 						<td>1</td>
-						<td>R</td>
-						<td>Richi</td>
-						<td>Hnok</td>
+						<td>ivan001</td>
+						<td>Иван</td>
+						<td>Иванов</td>
 						<td>5</td>
 						<td>120</td>
-						<td>
-							<a href="/editor/updateInfo/user?userId=1">
-								<button type="button">Обновить</button>
+						<td class="control-cell">
+							<a href="/editing-user.html">
+								<button type="button" class="button-in-cell">Обновить</button>
 							</a>
-						</td>
-						<td>
 							<a href="/editor/deleteInfo/user?userId=1">
-								<button type="button">Удалить</button>
+								<button type="button" class="button-in-cell">Удалить</button>
 							</a>
 						</td>
 					</tr>
 					<tr>
 		
 						<td>3</td>
-						<td>A</td>
-						<td>Artemiy</td>
-						<td>Viazovski</td>
+						<td>ivan002</td>
+						<td>Иван</td>
+						<td>Сидорович</td>
 						<td>7</td>
 						<td>60</td>
-						<td>
-							<a href="/editor/updateInfo/user?userId=3">
-								<button type="button">Обновить</button>
+						<td class="control-cell">
+							<a href="/editing-user.html">
+								<button type="button" class="button-in-cell">Обновить</button>
 							</a>
-						</td>
-						<td>
 							<a href="/editor/deleteInfo/user?userId=3">
-								<button type="button">Удалить</button>
+								<button type="button" class="button-in-cell">Удалить</button>
 							</a>
 						</td>
 					</tr>
 					<tr>
 		
 						<td>4</td>
-						<td>ap</td>
-						<td>Arkadiy</td>
-						<td>Porovozov</td>
+						<td>user8888</td>
+						<td>noname</td>
+						<td></td>
 						<td>5</td>
 						<td>60</td>
-						<td>
-							<a href="/editor/updateInfo/user?userId=4">
-								<button type="button">Обновить</button>
+						<td class="control-cell">
+							<a href="/editing-user.html">
+								<button type="button" class="button-in-cell">Обновить</button>
 							</a>
-						</td>
-						<td>
 							<a href="/editor/deleteInfo/user?userId=4">
-								<button type="button">Удалить</button>
+								<button type="button" class="button-in-cell">Удалить</button>
 							</a>
 						</td>
 					</tr>
@@ -114,82 +108,32 @@
 						<td>B</td>
 						<td>5</td>
 						<td>60</td>
-						<td>
-							<a href="/editor/updateInfo/user?userId=9">
-								<button type="button">Обновить</button>
+						<td class="control-cell">
+							<a href="/editing-user.html">
+								<button type="button" class="button-in-cell">Обновить</button>
 							</a>
-						</td>
-						<td>
 							<a href="/editor/deleteInfo/user?userId=9">
-								<button type="button">Удалить</button>
-							</a>
-						</td>
-					</tr>
-					<tr>
-		
-						<td>10</td>
-						<td>C</td>
-						<td>B</td>
-						<td>B</td>
-						<td>5</td>
-						<td>60</td>
-						<td>
-							<a href="/editor/updateInfo/user?userId=10">
-								<button type="button">Обновить</button>
-							</a>
-						</td>
-						<td>
-							<a href="/editor/deleteInfo/user?userId=10">
-								<button type="button">Удалить</button>
-							</a>
-						</td>
-					</tr>
-					<tr>
-		
-						<td>11</td>
-						<td>D</td>
-						<td>D</td>
-						<td>D</td>
-						<td>6</td>
-						<td>60</td>
-						<td>
-							<a href="/editor/updateInfo/user?userId=11">
-								<button type="button">Обновить</button>
-							</a>
-						</td>
-						<td>
-							<a href="/editor/deleteInfo/user?userId=11">
-								<button type="button">Удалить</button>
+								<button type="button" class="button-in-cell">Удалить</button>
 							</a>
 						</td>
 					</tr>
 				</tbody>
 			</table>
 			<br>
-			<input type="button" value="Добавить пользователя" onclick="window.location.href = 'addUser'">
+			<input type="button" value="Добавить пользователя" onclick="window.location.href = 'addUser'" class="button">
 		</article>
 	</main>
 
 	<footer>
+		Контактная информация:
 		<div class="footer_info">
-			<div class="info_name">
-				Email:
-			</div>
-			<div class="email_info">
-				artemiyViazovski@gmail.com
-			</div>
-		</div>
-		<div class="footer_info">
-			<div class="info_name">
-				Тел:
-			</div>
-			<div class="phone_info">
-				+375296017119
-			</div>
+			<a class="email_info">
+				Email
+			</a>
 		</div>
 		<div class="footer_info">
 			<a href="https://t.me/richihnok" target="_blank" class="tg-info">
-				Телеграм
+				Telegram
 			</a>
 		</div>
 		<div class="footer_info">

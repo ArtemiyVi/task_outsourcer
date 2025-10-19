@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/common.css">
+  <link rel="stylesheet" href="/css/curtain-pages/editing-user.css">
   <link rel="shortcut icon" href="image/icon2.svg" type="image/x-icon">
   <script type="text/javascript" src="/js/script.js"></script>
   <title>Task Outsourcer</title>
@@ -33,48 +34,51 @@
 
   <main>
     <article>
-    	<h2>User Data</h2>
-	    <br>
-	    <form action="/editor/saveUser" method="post">
-	      <input type="hidden" id="id" name="id" value="1">
+    	<h1>Редактирование данных пользоваетля <span style="text-decoration: underline;">ivan001</span></h1>	
+	    <form action="/editor/saveUser" method="post">  
+	      <div class="entering-param">
+	      	<p>Имя</p>
+					<input type="text" id="name" name="name" value="Иван">
+	      </div>
+	      
+				<div class="entering-param">
+					<p>Фамилия</p>
+					<input type="text" id="surname" name="surname" value="Иванов">
+				</div>
+	      
+				<div class="entering-param">
+					<p>Приоритет</p>
+					<input type="text" id="priority" name="priority" value="5">
+				</div>
+	      
+				<div class="entering-param">
+					<p>Время вполнения задач в минутах</p>
+					<input type="text" id="minutesToProcessTask" name="minutesToProcessTask" value="120">
+				</div>
 	  
-	      Name:<br> <input type="text" id="name" name="name" value="Richi">
-	      <br>
-	      Surname:<br> <input type="text" id="surname" name="surname" value="Hnok">
-	      <br>
-	      Priority:<br> <input type="text" id="priority" name="priority" value="5">
-	      <br>
-	      Minutes To Proc Task:<br> <input type="text" id="minutesToProcessTask" name="minutesToProcessTask" value="120">
-	  
-	      <br>
-	      <input type="submit" name="save" value="Save">
-	      <a href="/editor/taskSamples">
-	        <button type="button">Cancel</button>
-	      </a>
+	      <div class="buttons">
+	      	<div>
+						<input type="submit" name="save" value="Сохранить" class="button">
+					</div>
+	
+		      <a href="/editor/taskSamples">
+		        <button type="button" class="button">Отменить</button>
+		      </a>
+	      </div>
 	    </form>
     </article>
   </main>
 
   <footer>
+		Контактная информация:
 		<div class="footer_info">
-			<div class="info_name">
-				Email:
-			</div>
-			<div class="email_info">
-				artemiyViazovski@gmail.com
-			</div>
-		</div>
-		<div class="footer_info">
-			<div class="info_name">
-				Тел:
-			</div>
-			<div class="phone_info">
-				+375296017119
-			</div>
+			<a class="email_info">
+				Email
+			</a>
 		</div>
 		<div class="footer_info">
 			<a href="https://t.me/richihnok" target="_blank" class="tg-info">
-				Телеграм
+				Telegram
 			</a>
 		</div>
 		<div class="footer_info">

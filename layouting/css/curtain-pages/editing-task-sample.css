@@ -1,0 +1,136 @@
+form {
+    width: 80%;
+    font-size: 0.9em;
+    display: flex;
+    flex-direction: column;
+}
+
+.other{
+    font-size: 0.9em;
+}
+
+.entering-param{
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+}
+
+.task-description {
+    height: 120px;
+    width: 400px;
+    resize: none
+}
+
+.download-script{
+    display: flex;
+    gap: 15px;
+}
+
+.param-table{
+    font-size: 0.65em;
+    width: 100%;
+    align-self: center;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.param-table>thead>tr>th {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    align-content: center;
+    padding: 6px 0;
+    color: var(--brown);
+    font-weight: 600;
+    background-image: linear-gradient(var(--bright-y1), var(--darker-y1));
+}
+
+.param-table>tbody>tr>td {
+    border: 1px solid #9b9b9b;
+    align-content: center;
+}
+
+.type-cell{
+    padding: 0 5px;
+    font-size:  0.9em;
+}
+
+.button.remove{
+    min-width: 2em;
+    text-align: center;
+    margin: 0;
+}
+
+/* .param-table>tbody>tr>td {
+    padding: 6px;
+} */
+
+.constraints{
+    display: flex;
+    flex-direction: column;
+    min-width: min-content;
+    max-width: 12em;
+    padding-top: 10px;
+}
+
+.entering-constraint{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.param-description {
+    min-height: 7em;
+    text-align: start;
+    /* scroll-behavior: ; */
+    min-width: 20em;
+    max-width: none;
+    resize: none
+}
+
+textarea.param-description{
+    border: none;
+    width: 100%;
+}
+
+.error{
+    color: red;
+    font-size: 0.85em;
+    padding: 10px 0;
+    text-align: start;
+}
+
+.button{
+    min-width: 8vw;
+    max-width: fit-content;
+    margin: 0 10px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    margin-top: 10px;
+}
+
+.my-button {
+    font-size: 0.7em;
+    min-width: fit-content;
+    width: 15%;
+    height: 100%;
+    background-image: linear-gradient(var(--bright-y1), var(--darker-y1));
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    line-height: 150%;
+    text-align: center;
+}
+
+#file-button {
+    filter: alpha(opacity=1);
+    -moz-opacity: 0.1;
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+}

@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/common.css">
+  <link rel="stylesheet" href="/css/curtain-pages/personal-cabinet.css">
   <link rel="shortcut icon" href="image/icon2.svg" type="image/x-icon">
   <script type="text/javascript" src="/js/script.js"></script>
   <title>Task Outsourcer</title>
@@ -14,7 +15,7 @@
 	<header>
 		<a href="/index-simple-user.html" class="app-logo">
 			<img src="image/icon2.svg" alt="" class="logo-img">
-			Task Outsourcer
+			Task Outsourcertas
 		</a>
 		<ul class="nav-menu">
 			<li class="nav-link-container">
@@ -44,43 +45,6 @@
 						</thead>
 						<tbody>
 							<tr>
-								<td class="id-cell">112</td>
-								<td class="time-cell">2025-05-03 11:15:50.0</td>
-								<td class="name-cell">Рендер картинки в Blender. Движок Cycles</td>
-								<td class="param-table">
-									<table>
-										<tbody>
-											<tr>
-												<td class="param-name">Горизонтальное разрешение:</td>
-												<td>11</td>
-											</tr>
-											<tr>
-												<td class="param-name">Вертикальное разрешение:</td>
-												<td>11</td>
-											</tr>
-											<tr>
-												<td class="param-name">blender-проект:</td>
-												<td>
-													<a href="">test.blend</a>
-												</td>
-											</tr>
-											<tr>
-												<td class="param-name">Название итоговой картинки:</td>
-												<td>test11</td>
-											</tr>
-											<tr>
-												<td  class="param-name">Samples:</td>
-												<td>111</td>
-											</tr>
-										</tbody>
-									</table>
-								</td>
-								<td class="status-cell">FINISHED</td>
-								<td class="result-cell">
-									<a href="">Скачать</a>
-								</td>
-							</tr>
-							<tr>
 								<td class="id-cell">108</td>
 								<td class="time-cell">2025-04-15 13:42:45.0</td>
 								<td class="name-cell">Рендер картинки в Blender. Движок Cycles</td>
@@ -89,11 +53,11 @@
 										<tbody>
 											<tr>
 												<td class="param-name">Горизонтальное разрешение:</td>
-												<td>11</td>
+												<td>1000</td>
 											</tr>
 											<tr>
 												<td class="param-name">Вертикальное разрешение:</td>
-												<td>11</td>
+												<td>1000</td>
 											</tr>
 											<tr>
 												<td class="param-name">blender-проект:</td>
@@ -102,12 +66,12 @@
 												</td>
 											</tr>
 											<tr>
-												<td class="param-name">Название итоговой картинки:</td>
-												<td>11</td>
+												<td class="param-name">Название итоговой изображения:</td>
+												<td>rendered</td>
 											</tr>
 											<tr>
 												<td class="param-name">Samples:</td>
-												<td>11</td>
+												<td>100</td>
 											</tr>
 										</tbody>
 									</table>
@@ -146,47 +110,34 @@
 					<div class="pagination">
 						<a href="" class="active">1</a>
 						<a href="" class="not-active">2</a>
-						<a href="" class="not-active">3</a>
-						<a href="" class="not-active">4</a>
-						<a href="" class="not-active">5</a>
 					</div>
 				</div>
 			</div>
 		</article>
 		<aside class="personal-cabinet">
-			<p>Логин:</p>
-			<p>R</p>
-			<p>Имя:</p>
-			<span>Richi</span>
-			<p>Фамилия:</p>
-			<span>Hnok</span>
+			<p class="label">Логин:</p>
+			<p class="value">ivan001</p>
+			<p class="label">Имя:</p>
+			<p class="value">Иван</p>
+			<p class="label">Фамилия:</p>
+			<p class="value">Иванов</p>
 			<br><br>
 			<a href="index-anonymous-user.html">
-				<button type="button">Выход из учётной записи</button>
+				<button type="button" class="button">Выход из учётной записи</button>
 			</a>
 		</aside>
 	</main>
 
-	<footer class="personal-cabinet">
+	<footer>
+		Контактная информация:
 		<div class="footer_info">
-			<div class="info_name">
-				Email:
-			</div>
-			<div class="email_info">
-				artemiyViazovski@gmail.com
-			</div>
-		</div>
-		<div class="footer_info">
-			<div class="info_name">
-				Тел:
-			</div>
-			<div class="phone_info">
-				+375296017119
-			</div>
+			<a class="email_info">
+				Email
+			</a>
 		</div>
 		<div class="footer_info">
 			<a href="https://t.me/richihnok" target="_blank" class="tg-info">
-				Телеграм
+				Telegram
 			</a>
 		</div>
 		<div class="footer_info">

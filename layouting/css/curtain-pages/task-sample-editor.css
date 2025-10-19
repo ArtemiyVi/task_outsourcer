@@ -1,0 +1,64 @@
+article {
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.task-table {
+    font-size: 0.8em;
+    width: 100%;
+}
+
+.task-table>thead>tr>th {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    align-content: center;
+    padding: 6px;
+    color: var(--brown);
+    font-weight: 600;
+    background-image: linear-gradient(var(--bright-y1), var(--darker-y1));
+}
+
+.task-table>tbody>tr>td {
+    border: 1px solid #9b9b9b;
+    align-content: center;
+}
+
+.task-table>tbody>tr>td {
+    padding: 6px;
+}
+
+.button-in-cell{
+    height: 2em;
+    background-image: linear-gradient(var(--bright-y1), var(--darker-y1));
+    border: none;
+    font-size: 0.7em;
+    font-weight: 700;
+    color: var(--brown);
+    box-shadow: 2px 1px 4px -1px var(--b-for-shadow);
+}
+
+.button-in-cell:hover{
+    color: var(--saturated-r);
+}
+
+.control-cell > a{
+    display: inline;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+}
+
+.id-cell,
+.control-cell {
+    text-align: center;
+}
+
+.pagination {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination>a {
+    padding: 0 6px;
+}

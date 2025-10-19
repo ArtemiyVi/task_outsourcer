@@ -3,318 +3,268 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/common.css">
+  <link rel="stylesheet" href="/css/curtain-pages/editing-task-sample.css">
   <link rel="shortcut icon" href="image/icon2.svg" type="image/x-icon">
   <script type="text/javascript" src="/js/script.js"></script>
-  <title>Task Outsourcer</title>
+  <title>Task Outsourcer - Editing Task Sample #1</title>
 </head>
 
 <body>
   <header>
-		<a href="/index-simple-user.html" class="app-logo">
-			<img src="image/icon2.svg" alt="" class="logo-img">
-			Task Outsourcer
-		</a>
-		<ul class="nav-menu">
-			<li class="nav-link-container">
-				<a href="/choosing-task.html" class="nav-link">Выбор задачи</a>
-			</li>
-			<li class="nav-link-container">
-				<a href="/personal-cabinet.html" class="nav-link">Личный кабинет</a>
-			</li>
-			<li class="nav-link-container">
-				<a href="/control-panel.html" class="nav-link">Контрольная панель</a>
-			</li>
-			<li class="nav-link-container">
-				<a href="/editor.html" class="nav-link">Редактор</a>
-			</li>
-		</ul>
-	</header>
+    <a href="/index-simple-user.html" class="app-logo">
+      <img src="image/icon2.svg" alt="" class="logo-img">
+      Task Outsourcer
+    </a>
+    <ul class="nav-menu">
+      <li class="nav-link-container">
+        <a href="/choosing-task.html" class="nav-link">Выбор задачи</a>
+      </li>
+      <li class="nav-link-container">
+        <a href="/personal-cabinet.html" class="nav-link">Личный кабинет</a>
+      </li>
+      <li class="nav-link-container">
+        <a href="/control-panel.html" class="nav-link">Контрольная панель</a>
+      </li>
+      <li class="nav-link-container">
+        <a href="/editor.html" class="nav-link">Редактор</a>
+      </li>
+    </ul>
+  </header>
 
   <main>
     <article>
-      <h2>Редактирование шаблона задачи #1</h2>
-    
-    
+      <h1>Редактирование шаблона задачи #1</h1>
+
+
       <form action="/editor/taskSamples/edit" method="post" enctype="multipart/form-data">
-        <input type="hidden" id="id" name="id" value="1">
-    
-        <span>Название:</span>
-        <br>
-        <input type="text" style="width:400px;" id="name" name="name" value="Рендер картинки в Blender. Движок Cycles">
-        <br>
-        <span>Описание:</span>
-        <br>
-        <textarea type="text" style="height:120px;width:400px;resize:none" id="description"
-          name="description">Это задача нужна для рендера картинки в блендер-проекте. В параметрах укажите размеры картинки, имя блендер-проекта с расширением и название итоговой картинки.</textarea>
-        <br>
-        <br>
-    
-        <span>Шаблон запускающей команды:</span>
-        <input type="text" id="launchCommandTemplate" name="launchCommandTemplate"
-          value="blender -b -P &quot;%s&quot; -- &quot;%s&quot; %s">
-        <br>
-        <span>Задание нового скрипта:</span>
-    
-        <input type="file" id="scriptFile" name="scriptFile">
-    
-        <input type="hidden" id="scriptFileName" name="scriptFileName" value="render_image.py">
-        <div>
-          <span>Скачать текущий скрипт:</span>
-          <a href="/download/taskSampleScript/1">render_image.py</a>
+
+        <div class="other">
+          <div class="entering-param">
+            <label>Название:</label>
+            <input type="text" style="width:400px;" id="name" name="name"
+              value="Рендер картинки в Blender. Движок Cycles">
+          </div>
+
+          <div class="entering-param">
+            <label>Описание:</label>
+            <textarea type="text" class="task-description" id="description" name="description">Выполняет рендер картинки в 3D-редакторе Blender на движке Cycles с возможностью задания итоговогоразрешения по вертикали и горизонтали картинки и количества циклов обработки.</textarea>
+          </div>
+
+          <div class="entering-param">
+            <label>Шаблон запускающей команды:</label>
+            <input type="text" id="launchCommandTemplate" name="launchCommandTemplate"
+              value="blender -b -P &quot;%s&quot; -- &quot;%s&quot; %s">
+          </div>
+
+          <div class="entering-param">
+            <label>Задание нового скрипта:</label>
+            <div class="my-button">
+              <input type="file" id="file-button" name="scriptFile">
+              <div class="text">Приложить файл</div>
+            </div>
+          </div>
+
+          <div class="download-script">
+            <label>Скачать текущий скрипт:</label>
+            <a href="/download/taskSampleScript/1">render_image.py</a>
+          </div>
         </div>
-        <br>
-        <br>
-    
-        <span>Параметры:</span>
-        <br>
-        <table>
+
+        <h2 style="align-self: center;">Параметры</h2>
+        <table class="param-table">
           <thead>
             <tr>
-              <th>Type</th>
-              <th>Name</th>
-              <th>Description</th>
-              <th>Constraints</th>
+              <th>Тип</th>
+              <th>Имя</th>
+              <th>Описание</th>
+              <th>Ограничения</th>
               <th></th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <input type="hidden" id="paramsInfo0.id" name="paramsInfo[0].id" value="57">
-              <input type="hidden" id="paramsInfo0.type" name="paramsInfo[0].type" value="INTEGER">
-              <input type="hidden" id="paramsInfo0.uuid" name="paramsInfo[0].uuid"
-                value="b303b513-0891-496f-9bc7-b52d29d12914">
-    
-              <td>INTEGER</td>
-              <td><input type="text" id="paramsInfo0.name" name="paramsInfo[0].name" value="Горизонтальное разрешение"></td>
+              <td class="type-cell">INTEGER</td>
               <td>
-                <textarea type="text" style="height:40px;width:300px;resize:none" id="paramsInfo0.description"
-                  name="paramsInfo[0].description">Тест</textarea>
+                <input type="text" value="Горизонтальное разрешение">
               </td>
               <td>
-                <div style="display:inline">
-                  <div>
-                    <input type="hidden" id="intConstraints0.uuid" name="intConstraints[0].uuid"
-                      value="b303b513-0891-496f-9bc7-b52d29d12914">
-    
-                    <input type="text" style="width:40px" id="intConstraints0.min" name="intConstraints[0].min" value="0">
-                    <input type="text" style="width:40px" id="intConstraints0.max" name="intConstraints[0].max"
-                      value="-10000">
-    
-                    <span style="color: red">Минимальное ограничение должно быть меньше максимального</span>
+                <textarea type="text" class="param-description" placeholder="Добавьте описание">Задаёт горизонтальное разрешение итогового изображения.</textarea>
+              </td>
+              <td>
+                <div class="constraints">
+                  <div class="entering-constraint">
+                    <label for="" class="constraint-name">Мин:</label>
+                    <input type="text" value="1">
                   </div>
+                  <div class="entering-constraint">
+                    <label for="" class="constraint-name">Макс:</label>
+                    <input type="text" value="10000">
+                  </div>
+
+                  <!-- <p class="error">
+                    Минимальное ограничение должно быть меньше максимального
+                  </p> -->
                 </div>
-                <div style="display:inline">
-    
-                </div>
-                <div style="display:inline">
-    
-                </div>
-    
-    
               </td>
               <td>
-                <button type="submit" name="removeParam"
-                  formaction="/editor/taskSamples/edit?paramUuid=b303b513-0891-496f-9bc7-b52d29d12914">X</button>
+                <button type="submit" name="removeParam" formaction="" class="button remove">X</button>
               </td>
-    
+            </tr>
+
+            <tr>
+              <td class="type-cell">INTEGER</td>
+              <td>
+                <input type="text" value="Вертикальное разрешение">
+              </td>
+              <td>
+                <textarea type="text" class="param-description"
+                  placeholder="Добавьте описание">Задаёт вертикальное разрешение итогового изображения.</textarea>
+              </td>
+              <td>
+                <div class="constraints">
+                  <div class="entering-constraint">
+                    <label class="constraint-name">Мин:</label>
+                    <input type="text" value="1">
+                  </div>
+
+                  <div class="entering-constraint">
+                    <label for="" class="constraint-name">Макс:</label>
+                    <input type="text" value="10000">
+                  </div>
+
+                  <!-- <p class="error">
+                    Минимальное ограничение должно быть меньше максимального
+                  </p> -->
+                </div>
+
+
+              </td>
+              <td>
+                <button type="submit" name="removeParam" formaction="" class="button remove">X</button>
+              </td>
+
             </tr>
             <tr>
-              <input type="hidden" id="paramsInfo1.id" name="paramsInfo[1].id" value="58">
-              <input type="hidden" id="paramsInfo1.type" name="paramsInfo[1].type" value="INTEGER">
-              <input type="hidden" id="paramsInfo1.uuid" name="paramsInfo[1].uuid"
-                value="e3316ae7-6231-4474-aa3b-2cdf29d5ffc0">
-    
-              <td>INTEGER</td>
-              <td><input type="text" id="paramsInfo1.name" name="paramsInfo[1].name" value="Вертикальное разрешение"></td>
+              <td class="type-cell">FILE</td>
               <td>
-                <textarea type="text" style="height:40px;width:300px;resize:none" id="paramsInfo1.description"
-                  name="paramsInfo[1].description"></textarea>
+                <input type="text" value="blender-проект">
               </td>
               <td>
-                <div style="display:inline">
-    
-                </div>
-                <div style="display:inline">
-                  <div>
-                    <input type="hidden" id="intConstraints1.uuid" name="intConstraints[1].uuid"
-                      value="e3316ae7-6231-4474-aa3b-2cdf29d5ffc0">
-    
-                    <input type="text" style="width:40px" id="intConstraints1.min" name="intConstraints[1].min" value="0">
-                    <input type="text" style="width:40px" id="intConstraints1.max" name="intConstraints[1].max"
-                      value="-10000">
-    
-                    <span style="color: red">Минимальное ограничение должно быть меньше максимального</span>
+                <textarea type="text" class="param-description" placeholder="Добавьте описание">Blender-проект, на основе которого будет происходить рендер изображения.</textarea>
+              </td>
+              <td>
+                <div class="constraints">
+                  <div class="entering-constraint">
+                    <label for="" class="constraint-name">Тип файла:</label>
+                    <input type="text" value="blend">
                   </div>
                 </div>
-                <div style="display:inline">
-    
-                </div>
-    
-    
               </td>
               <td>
-                <button type="submit" name="removeParam"
-                  formaction="/editor/taskSamples/edit?paramUuid=e3316ae7-6231-4474-aa3b-2cdf29d5ffc0">X</button>
+                <button type="submit" name="removeParam" formaction="" class="button remove">X</button>
               </td>
-    
+
             </tr>
             <tr>
-              <input type="hidden" id="paramsInfo2.id" name="paramsInfo[2].id" value="59">
-              <input type="hidden" id="paramsInfo2.type" name="paramsInfo[2].type" value="FILE">
-              <input type="hidden" id="paramsInfo2.uuid" name="paramsInfo[2].uuid"
-                value="44bf200b-01ac-4bf9-8ff9-7417d5d3bd72">
-    
-              <td>FILE</td>
-              <td><input type="text" id="paramsInfo2.name" name="paramsInfo[2].name" value="blender-проект"></td>
+              <td class="type-cell">STRING</td>
               <td>
-                <textarea type="text" style="height:40px;width:300px;resize:none" id="paramsInfo2.description"
-                  name="paramsInfo[2].description"></textarea>
+                <input type="text" value="Название итоговой картинки">
               </td>
               <td>
-    
-    
-    
-    
-                <div style="display:inline">
-                  <div>
-                    <input type="hidden" id="fileConstraints0.uuid" name="fileConstraints[0].uuid"
-                      value="44bf200b-01ac-4bf9-8ff9-7417d5d3bd72">
-    
+                <textarea type="text" class="param-description" placeholder="Добавьте описание"></textarea>
+              </td>
+              <td>
+                <div class="constraints">
+                  <div class="entering-constraint">
+                    <label for="" class="constraint-name">RegEx:</label>
+                    <input type="text" value="">
                   </div>
+                  <div class="entering-constraint">
+                    <label for="" class="constraint-name">Пример:</label>
+                    <input type="text" value="">
+                  </div>
+
+                  <!-- <p class="error">
+                    Неверное регулярное выражение
+                  </p> -->
                 </div>
+
               </td>
               <td>
-                <button type="submit" name="removeParam"
-                  formaction="/editor/taskSamples/edit?paramUuid=44bf200b-01ac-4bf9-8ff9-7417d5d3bd72">X</button>
+                <button type="submit" name="removeParam" formaction="" class="button remove">X</button>
               </td>
-    
+
             </tr>
             <tr>
-              <input type="hidden" id="paramsInfo3.id" name="paramsInfo[3].id" value="60">
-              <input type="hidden" id="paramsInfo3.type" name="paramsInfo[3].type" value="STRING">
-              <input type="hidden" id="paramsInfo3.uuid" name="paramsInfo[3].uuid"
-                value="fafd9138-aa54-444f-9b04-bedab8586646">
-    
-              <td>STRING</td>
-              <td><input type="text" id="paramsInfo3.name" name="paramsInfo[3].name" value="Название итоговой картинки">
+              <td class="type-cell">INTEGER</td>
+              <td><input type="text" value="Samples"></td>
+              <td>
+                <textarea type="text" class="param-description" placeholder="Добавьте описание">Количество циклов обработки</textarea>
               </td>
               <td>
-                <textarea type="text" style="height:40px;width:300px;resize:none" id="paramsInfo3.description"
-                  name="paramsInfo[3].description"></textarea>
-              </td>
-              <td>
-    
-    
-    
-                <div style="display:inline">
-                  <div>
-                    <input type="hidden" id="strConstraints0.uuid" name="strConstraints[0].uuid"
-                      value="fafd9138-aa54-444f-9b04-bedab8586646">
-    
-                    <input type="text" id="strConstraints0.regExConstraint" name="strConstraints[0].regExConstraint"
-                      value="^test\d{2$">
-                    <input type="text" id="strConstraints0.hintValue" name="strConstraints[0].hintValue" value="test001">
-    
-                    <span style="color: red">Неверное регулярное выражение</span>
+                <div class="constraints">
+                  <div class="entering-constraint">
+                    <label for="" class="constraint-name">Мин:</label>
+                    <input type="text" value="1" class="constraint-value">
                   </div>
-                </div>
-    
-              </td>
-              <td>
-                <button type="submit" name="removeParam"
-                  formaction="/editor/taskSamples/edit?paramUuid=fafd9138-aa54-444f-9b04-bedab8586646">X</button>
-              </td>
-    
-            </tr>
-            <tr>
-              <input type="hidden" id="paramsInfo4.id" name="paramsInfo[4].id" value="61">
-              <input type="hidden" id="paramsInfo4.type" name="paramsInfo[4].type" value="INTEGER">
-              <input type="hidden" id="paramsInfo4.uuid" name="paramsInfo[4].uuid"
-                value="140a4ed2-1b3b-4cb8-8186-d40aed786390">
-    
-              <td>INTEGER</td>
-              <td><input type="text" id="paramsInfo4.name" name="paramsInfo[4].name" value="Samples"></td>
-              <td>
-                <textarea type="text" style="height:40px;width:300px;resize:none" id="paramsInfo4.description"
-                  name="paramsInfo[4].description"></textarea>
-              </td>
-              <td>
-                <div style="display:inline">
-    
-                </div>
-                <div style="display:inline">
-    
-                </div>
-                <div style="display:inline">
-                  <div>
-                    <input type="hidden" id="intConstraints2.uuid" name="intConstraints[2].uuid"
-                      value="140a4ed2-1b3b-4cb8-8186-d40aed786390">
-    
-                    <input type="text" style="width:40px" id="intConstraints2.min" name="intConstraints[2].min" value="100">
-                    <input type="text" style="width:40px" id="intConstraints2.max" name="intConstraints[2].max"
-                      value="-1000">
-    
-                    <span style="color: red">Минимальное ограничение должно быть меньше максимального</span>
+
+                  <div class="entering-constraint">
+                    <label for="" class="constraint-name">Макс:</label>
+                    <input type="text" value="1000">
                   </div>
+
+                  <!-- <p class="error">
+                    Минимальное ограничение должно быть меньше максимального
+                  </p> -->
                 </div>
-    
-    
               </td>
               <td>
-                <button type="submit" name="removeParam"
-                  formaction="/editor/taskSamples/edit?paramUuid=140a4ed2-1b3b-4cb8-8186-d40aed786390">X</button>
+                <button type="submit" name="removeParam" formaction="" class="button remove">X</button>
               </td>
-    
+
             </tr>
           </tbody>
         </table>
-    
-    
-        <select id="addingType" name="addingType">
-          <option value="INTEGER">INTEGER</option>
-          <option value="STRING">STRING</option>
-          <option value="FILE">FILE</option>
-        </select>
-        <input type="submit" name="addParam" value="Добавить параметр">
-        <br>
-        <br>
-        <input type="submit" name="save" value="Сохранить">
+
+
+        <div class="adding-param">
+          <select id="addingType" name="addingType">
+            <option value="INTEGER">INTEGER</option>
+            <option value="STRING">STRING</option>
+            <option value="FILE">FILE</option>
+          </select>
+          <input type="submit" name="addParam" value="Добавить параметр" class="button">
+        </div>
+
+        <div class="buttons">
+          <input type="submit" name="save" value="Сохранить" class="button">
+          <a href="/editor/taskSamples">
+            <button type="button" class="button">Отмена</button>
+          </a>
+        </div>
       </form>
-      <a href="/editor/taskSamples">
-        <button type="button">Отмена</button>
-      </a>
     </article>
   </main>
 
   <footer>
-		<div class="footer_info">
-			<div class="info_name">
-				Email:
-			</div>
-			<div class="email_info">
-				artemiyViazovski@gmail.com
-			</div>
-		</div>
-		<div class="footer_info">
-			<div class="info_name">
-				Тел:
-			</div>
-			<div class="phone_info">
-				+375296017119
-			</div>
-		</div>
-		<div class="footer_info">
-			<a href="https://t.me/richihnok" target="_blank" class="tg-info">
-				Телеграм
-			</a>
-		</div>
-		<div class="footer_info">
-			<a href="https://github.com/RichiHnok" target="_blank" class="github-info">
-				Github
-			</a>
-		</div>
-	</footer>
+    Контактная информация:
+    <div class="footer_info">
+      <a class="email_info">
+        Email
+      </a>
+    </div>
+    <div class="footer_info">
+      <a href="https://t.me/richihnok" target="_blank" class="tg-info">
+        Telegram
+      </a>
+    </div>
+    <div class="footer_info">
+      <a href="https://github.com/RichiHnok" target="_blank" class="github-info">
+        Github
+      </a>
+    </div>
+  </footer>
 
 </body>
 

@@ -1,0 +1,27 @@
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.entering-param{
+    margin: 5px 0;
+    font-size: 0.8em;
+}
+
+.entering-param > input{
+    width: 100%;
+}
+
+.buttons{
+    align-self: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+}
+
+.button{
+    min-width: 6vw;
+    width: fit-content;
+    margin: 5px;
+}

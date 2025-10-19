@@ -1,0 +1,19 @@
+article{
+    flex-grow: 1;
+}
+
+.message{
+    width: 90%;
+    text-align: center;
+}
+
+.buttons{
+    display: flex;
+    margin-top: 15px;
+}
+
+.buttons > a{
+    font-weight: 800;
+    min-width: 8em;
+    text-align: center;
+}

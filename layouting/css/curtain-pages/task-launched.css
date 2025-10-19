@@ -1,0 +1,19 @@
+.message{
+    display: block;
+    /* min-width: fit-content; */
+    width: 80%;
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+
+b{
+    font-weight: 600;
+}
+
+.param{
+    height: 1.5em;
+}
+
+.value{
+    padding-left: 30px;
+}

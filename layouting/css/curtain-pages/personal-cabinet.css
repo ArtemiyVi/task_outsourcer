@@ -1,0 +1,83 @@
+main.personal-cabinet{
+    font-size: 20px;
+    width: 95%;
+    flex-direction: row;
+}
+
+article.personal-cabinet{
+    width: 100%;
+    padding: 25px;
+}
+
+aside.personal-cabinet{
+    padding: 10px;
+    align-self: flex-start;
+    width: 20%;
+    margin-left: 15px;
+    background-color: var(--white);
+}
+
+p.label{
+    padding: 5px;
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+p.value{
+    box-shadow: 0px 1px 4px -2px #9b9b9b;
+    padding: 5px;
+}
+
+.button:hover{
+    color: #d83434;
+}
+
+.task-table{
+    font-size: 0.8em;
+    width: 100%;
+    border: 2px solid black;
+}
+
+.task-table > thead > tr > th{
+    border: 1px solid black;
+    align-content: center;
+    padding: 6px;
+    color: var(--brown);
+    font-weight: 600;
+    background-image: linear-gradient(var(--bright-y1), var(--darker-y1));
+}
+
+.task-table > tbody > tr > td{
+    border: 1px solid #9b9b9b;
+    align-content: center;
+}
+
+.task-table > tbody > tr > td{
+    padding: 6px;
+}
+
+.task-table > tbody > tr{
+    height: 150px;
+}
+
+.time-cell{
+    white-space: nowrap;
+}
+
+.id-cell, .time-cell, .result-cell{
+    text-align: center;
+}
+
+.param-name{
+    padding: 4px;
+}
+
+.pagination{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination > a{
+    padding: 0 6px;
+}

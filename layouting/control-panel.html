@@ -1,12 +1,13 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="/css/styles.css">
-  <link rel="shortcut icon" href="image/icon2.svg" type="image/x-icon">
-  <script type="text/javascript" src="/js/script.js"></script>
-  <title>Task Outsourcer</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="/css/reset.css">
+	<link rel="stylesheet" href="/css/common.css">
+	<link rel="stylesheet" href="/css/curtain-pages/control-panel.css">
+	<link rel="shortcut icon" href="image/icon2.svg" type="image/x-icon">
+	<script type="text/javascript" src="/js/script.js"></script>
+	<title>Task Outsourcer</title>
 </head>
 
 <body>
@@ -33,250 +34,158 @@
 
 	<main>
 		<article>
-			<div>
-				<div>
-					<h2>История задач пользоватлей</h2>
-					<table border="1">
-						<thead>
-							<tr>
-								<th>ID</th>
-								<th>Начало выполнения</th>
-								<th>Пользователь</th>
-								<th>Задача</th>
-								<th>Параметры</th>
-								<th>Статус</th>
-								<th>ЗАГЛУШКА</th>
-								<th>Запуск</th>
-								<th>Остановка</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>112</td>
-								<td>2025-05-03 11:15:50.0</td>
-								<td>R</td>
-								<td>Рендер картинки в Blender. Движок Cycles</td>
-								<td>
-									<table>
-										<tbody>
-											<tr>
-												<td>Горизонтальное разрешение:</td>
-												<td>11</td>
-											</tr>
-											<tr>
-												<td>Вертикальное разрешение:</td>
-												<td>11</td>
-											</tr>
-											<tr>
-												<td>blender-проект:</td>
-												<td>test.blend</td>
-											</tr>
-											<tr>
-												<td>Название итоговой картинки:</td>
-												<td>test11</td>
-											</tr>
-											<tr>
-												<td>Samples:</td>
-												<td>111</td>
-											</tr>
-										</tbody>
-									</table>
-								</td>
-								<td>FINISHED</td>
-								<td>
-									<form action="/controlPanel/delete/112" method="post">
-										<button type="subbmit">Delete</button>
-									</form>
-								</td>
-								<td>
-		
-									<!-- <form th:if="${task.status.name() == 'CREATED'}"
-									th:action="@{/controlPanel/launch/{taskId}(taskId=${task.id})}" method="post">
-									<button type="subbmit">Start</button>
-								</form> -->
-								</td>
-								<td>
-		
-								</td>
-							</tr>
-							<tr>
-								<td>108</td>
-								<td>2025-04-15 13:42:45.0</td>
-								<td>R</td>
-								<td>Рендер картинки в Blender. Движок Cycles</td>
-								<td>
-									<table>
-										<tbody>
-											<tr>
-												<td>Горизонтальное разрешение:</td>
-												<td>11</td>
-											</tr>
-											<tr>
-												<td>Вертикальное разрешение:</td>
-												<td>11</td>
-											</tr>
-											<tr>
-												<td>blender-проект:</td>
-												<td>test.blend</td>
-											</tr>
-											<tr>
-												<td>Название итоговой картинки:</td>
-												<td>11</td>
-											</tr>
-											<tr>
-												<td>Samples:</td>
-												<td>11</td>
-											</tr>
-										</tbody>
-									</table>
-								</td>
-								<td>FINISHED</td>
-								<td>
-									<form action="/controlPanel/delete/108" method="post">
-										<button type="subbmit">Delete</button>
-									</form>
-								</td>
-								<td>
-		
-									<!-- <form th:if="${task.status.name() == 'CREATED'}"
-									th:action="@{/controlPanel/launch/{taskId}(taskId=${task.id})}" method="post">
-									<button type="subbmit">Start</button>
-								</form> -->
-								</td>
-								<td>
-		
-								</td>
-							</tr>
-							<tr>
-								<td>95</td>
-								<td>2025-04-10 11:10:20.0</td>
-								<td>R</td>
-								<td>Проверка работы на txt-файле</td>
-								<td>
-		
-								</td>
-								<td>FINISHED</td>
-								<td>
-									<form action="/controlPanel/delete/95" method="post">
-										<button type="subbmit">Delete</button>
-									</form>
-								</td>
-								<td>
-		
-									<!-- <form th:if="${task.status.name() == 'CREATED'}"
-									th:action="@{/controlPanel/launch/{taskId}(taskId=${task.id})}" method="post">
-									<button type="subbmit">Start</button>
-								</form> -->
-								</td>
-								<td>
-		
-								</td>
-							</tr>
-							<tr>
-								<td>52</td>
-								<td>2025-03-01 11:47:21.0</td>
-								<td>A</td>
-								<td>Проверка работы на txt-файле</td>
-								<td>
-		
-								</td>
-								<td>FINISHED</td>
-								<td>
-									<form action="/controlPanel/delete/52" method="post">
-										<button type="subbmit">Delete</button>
-									</form>
-								</td>
-								<td>
-		
-									<!-- <form th:if="${task.status.name() == 'CREATED'}"
-									th:action="@{/controlPanel/launch/{taskId}(taskId=${task.id})}" method="post">
-									<button type="subbmit">Start</button>
-								</form> -->
-								</td>
-								<td>
-		
-								</td>
-							</tr>
-							<tr>
-								<td>51</td>
-								<td>2025-03-01 11:47:14.0</td>
-								<td>A</td>
-								<td>Проверка работы на txt-файле</td>
-								<td>
-		
-								</td>
-								<td>FINISHED</td>
-								<td>
-									<form action="/controlPanel/delete/51" method="post">
-										<button type="subbmit">Delete</button>
-									</form>
-								</td>
-								<td>
-		
-									<!-- <form th:if="${task.status.name() == 'CREATED'}"
-									th:action="@{/controlPanel/launch/{taskId}(taskId=${task.id})}" method="post">
-									<button type="subbmit">Start</button>
-								</form> -->
-								</td>
-								<td>
-		
-								</td>
-							</tr>
-							<tr>
-								<td>50</td>
-								<td>2025-03-01 11:45:30.0</td>
-								<td>R</td>
-								<td>Проверка работы на txt-файле</td>
-								<td>
-		
-								</td>
-								<td>FINISHED</td>
-								<td>
-									<form action="/controlPanel/delete/50" method="post">
-										<button type="subbmit">Delete</button>
-									</form>
-								</td>
-								<td>
-		
-									<!-- <form th:if="${task.status.name() == 'CREATED'}"
-									th:action="@{/controlPanel/launch/{taskId}(taskId=${task.id})}" method="post">
-									<button type="subbmit">Start</button>
-								</form> -->
-								</td>
-								<td>
-		
-								</td>
-							</tr>
-						</tbody>
-					</table>
-					<div class="pagination">
-						<a href="/personal?page=1" class="active">1</a>
-					</div>
-				</div>
+			<h1>История задач пользоватлей</h1>
+
+			<table class="task-table">
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>Начало выполнения</th>
+						<th>Пользователь</th>
+						<th>Задача</th>
+						<th>Параметры</th>
+						<th>Статус</th>
+						<th>Управление</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>108</td>
+						<td class="time-cell">2025-04-15 13:42:45.0</td>
+						<td>ivan001</td>
+						<td>Рендер картинки в Blender. Движок Cycles</td>
+						<td>
+							<table>
+								<tbody>
+									<tr>
+										<td>Горизонтальное разрешение:</td>
+										<td>11</td>
+									</tr>
+									<tr>
+										<td>Вертикальное разрешение:</td>
+										<td>11</td>
+									</tr>
+									<tr>
+										<td>blender-проект:</td>
+										<td>test.blend</td>
+									</tr>
+									<tr>
+										<td>Название итоговой картинки:</td>
+										<td>11</td>
+									</tr>
+									<tr>
+										<td>Samples:</td>
+										<td>11</td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+						<td>FINISHED</td>
+						<td class="control-cell">
+							<a action="/controlPanel/delete/108" method="post">
+								<button type="subbmit" class="button-in-cell">Удалить</button>
+							</a>
+							<a action="/controlPanel/delete/108" method="post">
+								<button type="subbmit" class="button-in-cell">Блокировать</button>
+							</a>
+						</td>
+					</tr>
+
+					<tr>
+						<td>95</td>
+						<td class="time-cell">2025-04-10 11:10:20.0</td>
+						<td>ivan001</td>
+						<td>Проверка работы на txt-файле</td>
+						<td>
+
+						</td>
+						<td>FINISHED</td>
+						<td class="control-cell">
+							<a action="/controlPanel/delete/95">
+								<button type="subbmit" class="button-in-cell">Удалить</button>
+							</a>
+							<a action="/controlPanel/delete/108">
+								<button type="subbmit" class="button-in-cell">Блокировать</button>
+							</a>
+						</td>
+					</tr>
+
+					<tr>
+						<td>52</td>
+						<td class="time-cell">2025-03-01 11:47:21.0</td>
+						<td>ivan002</td>
+						<td>Проверка работы на txt-файле</td>
+						<td>
+
+						</td>
+						<td>FINISHED</td>
+						<td class="control-cell">
+							<a action="/controlPanel/delete/52" method="post">
+								<button type="subbmit" class="button-in-cell">Удалить</button>
+							</a>
+							<a action="/controlPanel/delete/108" method="post">
+								<button type="subbmit" class="button-in-cell">Блокировать</button>
+							</a>
+						</td>
+					</tr>
+
+					<tr>
+						<td>51</td>
+						<td class="time-cell">2025-03-01 11:47:14.0</td>
+						<td>ivan002</td>
+						<td>Проверка работы на txt-файле</td>
+						<td>
+
+						</td>
+						<td>FINISHED</td>
+						<td class="control-cell">
+							<a action="/controlPanel/delete/51">
+								<button type="subbmit" class="button-in-cell">Удалить</button>
+							</a>
+							<a action="/controlPanel/delete/108">
+								<button type="subbmit" class="button-in-cell">Блокировать</button>
+							</a>
+						</td>
+					</tr>
+
+					<tr>
+						<td>50</td>
+						<td class="time-cell">2025-03-01 11:45:30.0</td>
+						<td>ivan001</td>
+						<td>Проверка работы на txt-файле</td>
+						<td>
+
+						</td>
+						<td>FINISHED</td>
+						<td class="control-cell">
+							<a action="/controlPanel/delete/50">
+								<button type="subbmit" class="button-in-cell">Удалить</button>
+							</a>
+							<a action="/controlPanel/delete/108">
+								<button type="subbmit" class="button-in-cell">Блокировать</button>
+							</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="pagination">
+				<a href="/personal?page=1" class="active">1</a>
+				<a href="/personal?page=1" class="active">2</a>
+				<a href="/personal?page=1" class="active">3</a>
 			</div>
 		</article>
 	</main>
 
 	<footer>
+		Контактная информация:
 		<div class="footer_info">
-			<div class="info_name">
-				Email:
-			</div>
-			<div class="email_info">
-				artemiyViazovski@gmail.com
-			</div>
-		</div>
-		<div class="footer_info">
-			<div class="info_name">
-				Тел:
-			</div>
-			<div class="phone_info">
-				+375296017119
-			</div>
+			<a class="email_info">
+				Email
+			</a>
 		</div>
 		<div class="footer_info">
 			<a href="https://t.me/richihnok" target="_blank" class="tg-info">
-				Телеграм
+				Telegram
 			</a>
 		</div>
 		<div class="footer_info">

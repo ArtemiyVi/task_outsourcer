@@ -1,0 +1,29 @@
+.task-container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.task-description-accordion{
+    margin-top: 6px;
+    font-size: 0.8em;
+}
+
+.task-details{
+    color: var(--gray-font);
+    padding: 10px;
+}
+
+.task-details-summary::marker{
+    font-size: 1em;
+}
+
+.task-details-summary:hover{
+    text-decoration: underline;
+}
+
+.task-list{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}

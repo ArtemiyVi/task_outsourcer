@@ -8,6 +8,7 @@
     --b-for-shadow: #b17b17;
     --saturated-r: #d83434;
     --brown: #a52a2a;
+    --gray-font: #625c54;
 }
 
 html{
@@ -71,8 +72,27 @@ main.personal-cabinet{
     flex-direction: row;
 }
 
-footer.personal-cabinet{
-    width: 95%;
+main.login{
+    width: fit-content;
+    display: block;
+    /* height: min-content; */
+    /* flex-grow: 0; */
+    padding: 0;
+    text-align: center;
+    margin: 10% auto;
+}
+
+article.login{
+    background-color: var(--white);
+    padding: 20px;
+    /* padding-bottom: 100px; */
+}
+
+nav.login{
+    background: linear-gradient(var(--bright-y1), var(--darker-y1));
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 800;
 }
 
 article{
@@ -98,17 +118,13 @@ aside.personal-cabinet{
     background-color: var(--white);
 }
 
-.task-container > a:hover{
-    color: var(--saturated-r);
-}
-
 footer{
     background: linear-gradient(var(--bright-y2), var(--darker-y2));
     display: flex;
     flex-direction: row;
     min-width: 600px;
-    width: 80%;
-    height: 80px;
+    width: 100%;
+    height: 5%;
     align-self: center;
     align-items: center;
     justify-content: space-evenly;
@@ -151,25 +167,6 @@ h1{
     font-size: 1.2em;
     font-weight: 700;
     margin: 20px;
-}
-
-.task-container{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 25px;
-}
-
-.task-description-accordion{
-    margin-top: 6px;
-    font-size: 0.8em;
-}
-
-.task-details-summary::marker{
-    font-size: 1em;
-}
-
-.task-details-summary:hover{
-    text-decoration: underline;
 }
 
 .task-table{

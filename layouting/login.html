@@ -1,38 +1,34 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="/css/styles.css">
-  <link rel="shortcut icon" href="image/icon2.svg" type="image/x-icon">
-  <script type="text/javascript" src="/js/script.js"></script>
-  <title>Task Outsourcer</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="/css/common.css">
+	<link rel="stylesheet" type="text/css" href="/css/curtain-pages/login.css">
+	<!-- <link rel="stylesheet" type="text/css" href="/css/styles.css"> -->
+	<link rel="shortcut icon" href="image/icon2.svg" type="image/x-icon">
+	<script type="text/javascript" src="/js/script.js"></script>
+	<title>Task Outsourcer</title>
 </head>
 
 <body>
-	<div>
-		<h2>Вход</h2>
-		<form action="/index-simple-user.html">
-			<table>
-				<tbody>
-					<tr>
-						<td><label for="username">Логин:</label></td>
-						<td><input type="text" id="username" name="username"></td>
-					</tr>
-					<tr>
-						<td><label for="password">Пароль:</label></td>
-						<td><input type="password" id="password" name="password"></td>
-					</tr>
-					<!-- <tr>
-                    <td><label for="remember-me" th:text="|#{l-rember-me}:|"/></td>
-                    <td><input type="checkbox" id="remember-me" name="remember-me" /></td>
-                </tr> -->
-				</tbody>
-			</table>
-			<input type="submit" value="Начать">
-		</form>
-		<a href="/index-admin.html" class="">Зайти как админ</a>
-	</div>
+	<main>
+		<nav>
+			<a href="/index-simple-user.html" class="app-logo">
+				<img src="image/icon2.svg" alt="" class="logo-img">
+				Task Outsourcer
+			</a>
+		</nav>
+		<article>
+			<h1>Вход</h1>
+			<form action="/index-simple-user.html">
+					<input type="text" id="username" placeholder="Логин" name="username" class="field">
+					<input type="password" id="password" placeholder="Пароль" name="password" class="field">
+				<input type="submit" value="Войти" class="submit">
+			</form>
+			<a href="/index-admin.html" class="">Зайти как админ</a>
+		</article>
+	</main>
 
 </body>
 

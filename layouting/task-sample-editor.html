@@ -1,12 +1,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="/css/styles.css">
-  <link rel="shortcut icon" href="image/icon2.svg" type="image/x-icon">
-  <script type="text/javascript" src="/js/script.js"></script>
-  <title>Task Outsourcer</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="/css/reset.css">
+	<link rel="stylesheet" href="/css/common.css">
+	<link rel="stylesheet" href="/css/curtain-pages/task-sample-editor.css">
+	<link rel="shortcut icon" href="image/icon2.svg" type="image/x-icon">
+	<script type="text/javascript" src="/js/script.js"></script>
+	<title>Task Outsourcer</title>
 </head>
 
 <body>
@@ -33,107 +34,66 @@
 
 	<main>
 		<article>
-			<h2>Редактор шаблонов задач</h2>
-			<table border="1">
-				<tbody>
+			<h1>Редактор шаблонов задач</h1>
+			<table class="task-table">
+				<thead>
 					<tr>
 						<th>ID</th>
 						<th>Название</th>
-						<th width="400px">Описание</th>
-						<th>Обновление</th>
-						<th>Удаление</th>
+						<th>Описание</th>
+						<th></th>
 					</tr>
+				</thead>
+				<tbody>
 					<tr>
 						<td>1</td>
 						<td>Рендер картинки в Blender. Движок Cycles</td>
-						<td style="height:20px;width:20px;">Это задача нужна для рендера картинки в блендер-проекте. В параметрах
-							укажите размеры картинки, имя блендер-проекта с расширением и название итоговой картинки.</td>
-						<td>
-							<a href="/editor/taskSamples/update/1">
-								<button type="button">Обновить</button>
+						<td>Выполняет рендер картинки в 3D-редакторе Blender на движке Cycles с возможностью задания итогового
+							разрешения по вертикали и горизонтали картинки и количества циклов обработки.</td>
+						<td class="control-cell">
+							<a href="/editing-task-sample.html">
+								<button type="button" class="button-in-cell">Обновить</button>
 							</a>
-						</td>
-						<td>
 							<a href="/editor/taskSamples/delete/1">
-								<button type="button">Удалить</button>
+								<button type="button" class="button-in-cell">Удалить</button>
 							</a>
 						</td>
 					</tr>
-					<tr>
-						<td>8</td>
-						<td>script 5</td>
-						<td style="height:20px;width:20px;">Description of script</td>
-						<td>
-							<a href="/editor/taskSamples/update/8">
-								<button type="button">Обновить</button>
-							</a>
-						</td>
-						<td>
-							<a href="/editor/taskSamples/delete/8">
-								<button type="button">Удалить</button>
-							</a>
-						</td>
-					</tr>
+
 					<tr>
 						<td>11</td>
 						<td>Проверка работы на txt-файле</td>
-						<td style="height:20px;width:20px;"></td>
-						<td>
+						<td>Задача для тестирования работоспосбности приложения. Здесь можно задать время выполнения задачи,
+							количество цифр в последовательности.</td>
+						<td class="control-cell">
 							<a href="/editor/taskSamples/update/11">
-								<button type="button">Обновить</button>
+								<button type="button" class="button-in-cell">Обновить</button>
 							</a>
-						</td>
-						<td>
 							<a href="/editor/taskSamples/delete/11">
-								<button type="button">Удалить</button>
+								<button type="button" class="button-in-cell">Удалить</button>
 							</a>
 						</td>
 					</tr>
-					<tr>
-						<td>12</td>
-						<td>Задача, выполняющийся указанное количество времени</td>
-						<td style="height:20px;width:20px;">Тестовая задача для проверки работы выполнения долгих задач, которая также
-							принимает параметр</td>
-						<td>
-							<a href="/editor/taskSamples/update/12">
-								<button type="button">Обновить</button>
-							</a>
-						</td>
-						<td>
-							<a href="/editor/taskSamples/delete/12">
-								<button type="button">Удалить</button>
-							</a>
-						</td>
-					</tr>
+
 				</tbody>
 			</table>
 			<br>
-			<a href="/editor/taskSamples/add">
-				<button type="button">Добавить шаблон</button>
+			<a href="/add-task-sample.html">
+				<button type="button" class="button">Добавить шаблон</button>
 			</a>
 		</article>
 	</main>
 
 	<footer>
+		Контактная информация:
 		<div class="footer_info">
-			<div class="info_name">
-				Email:
-			</div>
-			<div class="email_info">
-				artemiyViazovski@gmail.com
-			</div>
-		</div>
-		<div class="footer_info">
-			<div class="info_name">
-				Тел:
-			</div>
-			<div class="phone_info">
-				+375296017119
-			</div>
+			<a class="email_info">
+				Email
+			</a>
 		</div>
 		<div class="footer_info">
 			<a href="https://t.me/richihnok" target="_blank" class="tg-info">
-				Телеграм
+				Telegram
 			</a>
 		</div>
 		<div class="footer_info">
